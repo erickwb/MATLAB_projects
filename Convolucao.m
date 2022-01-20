@@ -6,12 +6,23 @@
 %Parametros (sinal x[n], n_x ,sinal h[n], n_h)
 
 function [Sinal_y, n_y] = Convolucao(Sinal_x, n_x, Sinal_h, n_h)
-
+%encontrando o valor de n_y
 min_n = n_x(1) + n_h(1);
 max_n = n_x(end) + n_h(end);
 n_y = [min_n:max_n];
 
-Sinal_y = conv(Sinal_x, Sinal_h);
+size_x = length(Sinal_x);
+size_h = length(Sinal_h);
+size_y =  (size_x + size_h -1);
+
+Sinal_y = zeros(1, size_y);
+%realizando a soma de convolução
+for i = 1:size_x
+      for k = 1:size_h
+        Sinal_y(i+k-1) = Sinal_y(i+k-1) + Sinal_h(k)*Sinal_x(i);
+      end
+end
+
 
 %plotando os sinais 
 subplot(3,1,1);
