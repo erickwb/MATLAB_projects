@@ -1,12 +1,16 @@
 # MATLAB_projects
 
 ## Arquivos 
-* Convoluca.m
+* Convolucao.m
 * Decompoem_sinal.m
 * main.m
 
 ### Como compilar
-Para testa as funções basta descomentar sua secçao no arquivo main e execultar o programa.   
+Para testa as funções basta descomentar sua seção no arquivo main e execultar o programa. 
+
+__Seção 01: Função Decompoem_sinal__
+
+__Seção 02: Convolucao__
 
 ## Exemplos de caso de teste 
 Para utilizar os exemplos de caso de teste basta copiar os valores de cada parametro 
