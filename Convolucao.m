@@ -26,15 +26,15 @@ end
 
 %plotando os sinais 
 subplot(3,1,1);
-stem(n_x, Sinal_x, 'k', 'LineWidth', 3);
+stem(n_x, Sinal_x);
 title('Sinal x[n]');
 
 subplot(3,1,2);
-stem(n_h, Sinal_h, 'k', 'LineWidth', 3);
+stem(n_h, Sinal_h);
 title('Sinal h[n]');
 
 subplot(3,1,3);
-stem(n_y, Sinal_y, 'k', 'LineWidth', 3);
+stem(n_y, Sinal_y);
 title('Sinal y[n]');
 
 
