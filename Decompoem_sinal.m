@@ -54,7 +54,7 @@ title('sinal par');
 
 subplot(4,1,3);
 stem(r, Sinal_impar);
-title('odd impar');
+title('sinal impar');
 
 subplot(4,1,4);
 stem(r, Soma_sinal);
